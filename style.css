@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(./img/5a6646ad47a1a.jpg);
+    background-size: cover;
+}
+.forma{
+    width: 100%;
+    height: 100%;
+}
+h1{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    color: rgba(252, 109, 0, 0.693);
+}
+form{
+    width: 900px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url(./img/3.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    border: none;
+    -webkit-box-shadow: 10px -16px 28px 14px rgba(0,0,0,0.83); 
+    box-shadow: 10px -16px 28px 14px rgba(0,0,0,0.83);
+}
+.info{
+    width: 350px;
+    height: 350px;
+    background-color: rgba(255, 102, 0, 0.672);
+    border-radius: 25px;
+    margin-top: 50px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+
+}
+.box_info{
+    width: 350px;
+    height: 300px;
+    /* background-color: rgba(255, 0, 0, 0.248); */
+    border-radius: 25px;
+    margin-bottom: 40px;
+}
+fieldset{
+    border-radius: 20px;
+    background-color: rgba(255, 102, 0, 0.481);
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+
+}
+legend{
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Fruktur', cursive;
+    background-color: rgba(255, 102, 0, 0.481);
+    border-radius: 10px;
+    border-bottom: none;
+}
+.user_self{
+    width: 100%;
+    /* height: 100%; */
+    text-align: center;
+    font-size: 100px;
+    margin-top: 20px;
+}
+.user_text{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.user_text p{
+    font-size: 20px;
+    font-family: 'Fruktur', cursive;
+}
+.user_text img{
+    height: 100px;
+    width: 100px;
+    transform: rotate(90deg);
+}
+.box_info div{
+    width: 300px;
+    margin: 20px auto;
+}
+input{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(10, 237, 195, 0.618);
+    -webkit-box-shadow: 7px 16px 25px -11px rgba(0,0,0,0.86); 
+    box-shadow: 7px 16px 25px -11px rgba(0,0,0,0.86);
+}
+.button{
+    height: 100px;
+    padding-top: 20px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    margin-left: 35px;
+    border: 1px solid black;
+    border-radius: 10cm;
+    background-color: rgba(233, 162, 68, 0.501);
+    transition: 0.5s;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+button:hover{
+    background-color: rgb(233, 162, 68);
+}
+@media screen and (max-width: 900px){
+    form{
+        height: 900px;
+        width: 500px;
+        flex-direction: column;
+    }
+    .user_text img{
+        transform: rotate(180deg);
+    }
+
+}
+@media screen and (max-width: 500px){
+    form{
+        height: 900px;
+        width: 90%;
+    }
+    .info{
+        width: 80%;
+    }
+    .box_info{
+        position: relative;
+        right: 20px;    
+        width: 80%;
+    }
+    input{
+        position: relative;
+        left: 30px;
+        width: 80%;
+    }
+}
